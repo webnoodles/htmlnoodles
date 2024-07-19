@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="headerino" class="grupo">
+        <img src="images/logo_empresa.jpg" id="logo">
+        <nav id="main-menu">
+            <ul class="grupo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="empresa.html">Empresa</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a class="ativo" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mainpic"></div>
+    <div id="content">
+        <h2>Contato</h2>
+        <p>Entre em contato connosco preenchendo o formulário abaixo.</p>
+        <br>
+        <form class="contact-form">
+            <table class="form-table">
+                <tr>
+                    <td class="form-cell" style="width: 50%;">
+                        <label for="cName">Nome:<span class="required">*</span></label><br>
+                        <input type="text" name="tName" id="cName" maxlength="30" placeholder="Nome Completo" required>
+                    </td>
+                    <td class="form-cell" style="width: 50%;">
+                        <label for="cEmpresa">Empresa:</label><br>
+                        <input type="text" name="tEmpresa" id="cEmpresa" maxlength="30" placeholder="Nome da Empresa">
+                    </td>
+                </tr>
+            </table>
+
+            <table class="form-table">
+                <tr>
+                    <td class="form-cell">
+                        <label for="cMail">E-Mail:<span class="required">*</span></label><br>
+                        <input type="email" name="tMail" id="cMail" maxlength="60" placeholder="E-mail de Contato"
+                            required>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="form-table">
+                <tr>
+                    <td class="form-cell" style="width: 50%;">
+                        <label for="cTelefone">Telefone:<span class="required">*</span></label><br>
+                        <input type="tel" name="tTel" id="cTel" maxlength="15" placeholder="Telefone" required>
+                    </td>
+                    <td class="form-cell" style="width: 50%;">
+                        <label>Departamento:</label><br>
+                        <div class="radio-group">
+                            <input type="radio" name="tDept" id="cCom">
+                            <label for="cCom">Comercial</label>
+                            <input type="radio" name="tDept" id="cFin">
+                            <label for="cFin">Financeiro</label>
+                            <input type="radio" name="tDept" id="cSup">
+                            <label for="cSup">Suporte</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="form-table">
+                <tr>
+                    <td class="form-cell">
+                        <label for="cAssunto">Assunto:<span class="required">*</span></label><br>
+                        <select name="tAssunto" id="cAssunto" required>
+                            <option value="" disabled selected>--Selecione--</option>
+                            <option value="Orçamento">Orçamento</option>
+                            <option value="Dúvidas">Dúvidas</option>
+                            <option value="Solicitações">Solicitações</option>
+                            <option value="Reclamações">Reclamações</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="form-table">
+                <tr>
+                    <td class="form-cell">
+                        <label for="cMsg">Mensagem:<span class="required">*</span></label><br>
+                        <textarea id="cMsg" name="tMsg" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </td>
+                </tr>
+            </table>
+
+            <label for="cAgree" class="newsletter-label">
+                <input type="checkbox" id="cAgree" name="tAgree" required>
+                Gostaria de receber a Newsletter da Empresa.
+            </label>
+
+            <div class="form-submit">
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+        </form>
+        <br>
+    </div>
+    <footer id="footerino">
+        <p id="contato">6 Diogo Ribeiro</p>
+        <p id="endereco">Rua Fictícia 420<br>253 420 069</p>
+        <p id="copyright">Diogo Ribeiro &copy; J+D UX/UI 01-24 Todos os direitos reservados.</small>
+    </footer>
+</body>
+
+</html>
